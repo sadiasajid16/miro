@@ -1,0 +1,240 @@
+:root{
+    --stratos: #050038;
+    --warning: #FFD02F;
+    --text: #05003899;
+    --heading: #050038;
+    --button: #4262FF;
+    --hover: #3f5ceb;
+    --light: #F5F5F7;
+    --sticky: #ffda6a;
+    --brown: #4b3d00;
+    --box-shaddow: rgba(0,0,0,0.1);
+    --black: #000;
+    --orange: orange;
+    --border-bg: #F1F3FD;
+    --border: rgb(243, 243, 243);
+    --gray: #333;
+    --border-light: #ccc;
+    --dark-gray:#999;
+}
+*{
+    color: var(--text);
+}
+.nav-link{
+    border: var(--border);
+    margin-right: 10px;
+}
+.nav-link.active {
+    background-color: var(--border-bg) !important;
+}
+.border-blue{
+    color: var(--button);
+    border-color: var(--button);
+}
+.customers-btn a:hover{
+    background-color: var(--hover);
+    color: white !important;
+}
+.star{
+    font-size: 15px;
+}
+.checked{
+    color: var(--orange);
+}
+.text-blue{
+    color: var(--text);
+}
+.heading{
+    color: var(--heading);
+}
+.btn-blue{
+    background-color: var(--button);
+    padding: 10px 30px;
+}
+.nav-tabs .nav-link {
+    border: 1px solid var(--border-light);
+    margin-right: 8px;
+    padding: 8px 16px;
+    color: var(--gray);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #e9ecef;
+    border-color: var(--dark-gray);
+    color: var(--black);
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+.hero-section {
+    padding: 80px 0;
+}
+.review-card{
+    background-color: var(--light);
+}
+.logo-section {
+    padding: 60px 0;
+}
+.logo-section img {
+    transition: all 0.3s ease;
+}
+
+.btn-blue:hover{
+    background-color: var(--hover);
+}
+.sticky-note {
+    top: -20px;
+    left: 70%;
+    transform: translateX(-50%) rotate(10deg);
+    background-color:var(--sticky) ;
+    padding: 5px 15px;
+    font-size: 0.85em;
+    color: var(--brown);
+    white-space: nowrap;
+    box-shadow: 0 2px 5px var(--box-shaddow);
+}
+.the-way-we-work{
+    background-image: url('/assets/connect/work.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    max-width: 1090px;
+}
+.slider-container .card{
+  height: 300px;
+  white-space: pre;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.owl-theme .owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: block !important;
+  text-align: center;
+  margin-top: 15px;
+}
+.slider-container .slider-card{
+    white-space: pre;
+}
+.slider-card img {
+    object-fit: cover;
+}
+.item.card {
+  overflow: visible;
+}
+.slider-container {
+  overflow: visible;
+}
+
+.work-together-section{
+    overflow-y: visible !important;
+}
+.logo-track {
+  animation: scroll 20s linear infinite;
+}
+.logo {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 0 20px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.built-bottom {
+    gap: 25px;
+}
+.built-bottom img{
+    width: 30px;
+}
+.companies{
+    background-color: var(--warning);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.info-bar{
+    background-color: var(--stratos);
+    margin-bottom: 100px;
+    padding: 100px 0px;
+    border-radius: 20px;
+    max-width: 1090px;
+}
+.logo-heading{
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+}
+.footer{
+    background-color: var(--stratos);
+}
+
+.slider-card {
+  transform: translateY(0);
+  transition: none;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .slider-card.center-lift {
+    animation: liftUp 0.4s ease-out forwards;
+    z-index: 2;
+  }
+}
+
+@keyframes liftUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+    .features-section .text-md-start {
+        text-align: center !important;
+    }
+}
+@media (max-width: 990px){
+    .sticky-note{
+        top: -40px;
+    }
+    .owl-carousel .center {
+    transform:none;
+    z-index: 2;
+    }
+    
+}
+@media (max-width: 1210px){
+    .work{
+        flex-direction: column !important;
+        display: flex;
+    }
+}
+@media (max-width: 534px){
+    .cards-img img{
+        width: 100px;
+    }
+    .pp1,
+    .pp2{
+        width: 50px;
+    }
+    .pp3{
+        width: 80px;
+    }
+    .companies p{
+        font-size: 12px;
+    }
+}
