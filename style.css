@@ -98,7 +98,7 @@
     box-shadow: 0 2px 5px var(--box-shaddow);
 }
 .the-way-we-work{
-    background-image: url('/assets/connect/work.png'); 
+    background-image: url('assets/connect/work.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
